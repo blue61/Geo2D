@@ -39,15 +39,15 @@ public class Vieleck extends GeoObjekt {
 	 */
 	public Vieleck(double xx, double yy, int anzahlEcken, double radius) {
 		super(xx, yy);
-		setA(anzahlEcken);
+		setAnzahlEcken(anzahlEcken);
         setRadius(radius);
 	}
 
-	public void setA(int aa) {
+	public void setAnzahlEcken(int aa) {
 		anzahlEcken = aa;
 	}
 
-	public int getA() {
+	public int getAnzahlEcken() {
 		return anzahlEcken;
 	}
 
