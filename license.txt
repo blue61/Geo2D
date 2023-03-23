@@ -1,0 +1,7 @@
+Dies ist Open Source Software
+
+Diese Bibliothek besteht aus Texten, die zum größten Teil von Github Copilot generiert wurden.
+Es werden keinerlei Garantien übernommen, insbesondere nicht für Korrektheit oder Effizienz.
+Diese Programmtexte dienen ausschließlich der Illustration der Möglichkeiten von Github Copilot 
+und ähnlicher KI Software. Für die Rechte zu Kopien gelten daher im Zweifelsfall die Benutzungsrechte 
+zu von Github Copilot erzeugten Programmtexten.
