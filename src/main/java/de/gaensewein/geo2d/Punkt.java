@@ -14,12 +14,25 @@
  */
 package de.gaensewein.geo2d;
 
+/**
+ * ein Punkt
+ */
 public class Punkt extends GeoObjekt {
 
+    /**
+     * erzeuge einen neuen Punkt
+     * @param xx X-Position
+     * @param yy Y-Position
+     */
     public Punkt(double xx, double yy) {
         super(xx, yy);
     }
 
+    /**
+     * berechne die Fläche
+     * @return Fläche
+     * @remark ein Punkt hat keine Ausdehnung, daher ist die Fläche 0
+     */
     public double flaeche() {
         return 0;
     }

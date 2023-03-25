@@ -17,6 +17,10 @@ package de.gaensewein.geo2d;
 
 public class App {
 
+	/**
+	 * only a small test app for the Geo2D project 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		GeoObjekt g1 = new Kreis( 2.1d, 3.5d, 2.7d );
 		

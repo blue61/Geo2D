@@ -14,6 +14,9 @@
  */
 package de.gaensewein.geo2d;
 
+/** 
+ * ein Rechteck
+ */
 public class Rechteck extends GeoObjekt{
 
     private double a;

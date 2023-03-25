@@ -14,6 +14,9 @@
  */
 package de.gaensewein.geo2d;
 
+/**
+ * ein Quadrat
+ */	
 public class Quadrat extends GeoObjekt {
 	private double a;
 

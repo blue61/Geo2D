@@ -14,6 +14,9 @@
  */
 package de.gaensewein.geo2d;
 
+/**
+ * ein Kreis
+ */
 public class Kreis extends GeoObjekt {
 
 	// Radius

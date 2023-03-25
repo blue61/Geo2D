@@ -14,7 +14,9 @@
  */
 package de.gaensewein.geo2d;
 
-
+/**
+ * ein regelmäßiges Vieleck
+ */
 public class Vieleck extends GeoObjekt {
 
 	// Anzahl der Ecken
@@ -36,6 +38,7 @@ public class Vieleck extends GeoObjekt {
 	 * @param xx X-Position des Mittelpunkts
 	 * @param yy Y-Position des Mittelpunkts
 	 * @param aa Anzahl der Ecken
+     * @param radius Radius
 	 */
 	public Vieleck(double xx, double yy, int anzahlEcken, double radius) {
 		super(xx, yy);

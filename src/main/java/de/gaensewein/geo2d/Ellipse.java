@@ -14,6 +14,9 @@
  */
 package de.gaensewein.geo2d;
 
+/**
+ * eine Ellipse
+ */
 public class Ellipse extends GeoObjekt {
     private double a;
     private double b;

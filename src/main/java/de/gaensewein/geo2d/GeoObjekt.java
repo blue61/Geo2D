@@ -15,10 +15,11 @@
 package de.gaensewein.geo2d;
 
 /**
- * Diese Klasse ist die Basis für alle Geometrischen Objekte
+ * Diese Klasse ist die Basis für Geometrische Objekte in der euklidischen Ebene.
  * 
  * @author ktnagel
- * 
+ * @remark Diese Klasse enthält die gmeinsamen Methoden der Geometrischen Objektre.
+ * 	   Diese Klasse ist abstrakt, da sie nicht instanziiert werden kann.
  */
 public abstract class GeoObjekt {
 	protected double x;
@@ -45,15 +46,20 @@ public abstract class GeoObjekt {
 		return y;
 	}
 
-	public void bewegeZu(double neu_x, double neu_y) {
-		setX(neu_x);
-		setY(neu_y);
-	}
-	
+	/**
+	 * Berechnet die Fläche des Objektes.
+	 * @return die Fläche des Objektes
+	 */
 	public double flaeche() {
 		return 0;
 	}
 
+	/**
+	 * Prüft, ob ein Punkt in einem Objekt liegt.
+	 * @param xx X-Position des Punktes
+	 * @param yy Y-Position des Punktes
+	 * @return true, wenn der Punkt in dem Objekt liegt, sonst false
+	 */
 	public boolean in(double xx, double yy) {
 		if(xx == x && yy == y) {
 			return true;

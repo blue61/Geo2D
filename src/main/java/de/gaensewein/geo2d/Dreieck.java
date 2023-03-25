@@ -14,12 +14,23 @@
  */
 package de.gaensewein.geo2d;
 
+/**
+ * ein Dreieck
+ */
 public class Dreieck extends GeoObjekt {
 
     private double a;
     private double b;
     private double c;
 
+    /**
+     * create a new triangle
+     * @param xx X-Position of the center
+     * @param yy Y-Position of the center
+     * @param aa length of side a
+     * @param bb length of side b
+     * @param cc length of side c
+     */
     public Dreieck(double xx, double yy, double aa, double bb, double cc) {
         super(xx, yy);
         setA(aa);
