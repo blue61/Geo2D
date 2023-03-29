@@ -60,6 +60,14 @@ public class Vieleck extends GeoObjekt {
         return 0.5 * h * a * anzahlEcken;    
 	}
 
+	/**
+	 * Prüfe, ob ein Punkt innerhalb des Vielecks liegt
+	 * diese Methode ist nicht korrekt, da sie die Ecken nicht berücksichtigt,
+	 * sondern nur den Umkreis des Vielecks
+	 * @param xx X-Position des Punktes
+	 * @param yy Y-Position des Punktes
+	 * @return true, wenn der Punkt innerhalb des Vielecks liegt
+	 */
 	public boolean in(double x, double y) {
 		if (Math.sqrt((x - this.x) * (x - this.x) + (y - this.y) * (y - this.y)) <= anzahlEcken) {
 			return true;

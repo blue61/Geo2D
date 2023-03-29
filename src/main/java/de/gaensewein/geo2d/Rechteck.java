@@ -56,6 +56,13 @@ public class Rechteck extends GeoObjekt{
         return a * b;
     }
 
+    /**
+     * Prüft, ob ein Punkt innerhalb des Rechtecks liegt
+     * im Unterschied zur Methode Quadrat.in() erscheint diese Methode korrekt zu sein. ;)
+     * @param xx X-Position des Punktes
+     * @param yy Y-Position des Punktes
+     * @return true, wenn der Punkt innerhalb des Rechtecks liegt
+     */
     public boolean in(double xx, double yy) {
         if (xx >= x - a / 2 && xx <= x + a / 2 && yy >= y - b / 2 && yy <= y + b / 2) {
             return true;

@@ -47,8 +47,16 @@ public class Quadrat extends GeoObjekt {
 		return super.toString() + " A: " + a;
 	}
 
+	/**
+	 * Prüfe, ob ein Punkt innerhalb des Quadrats liegt
+	 * Dies ist wieder ein Beispiel für eine fehlerhafte Implementierung,
+	 * denn der Referenzpunkt soll ja in der Mitte liegen, nicht unten links.
+	 * @param xx X-Position des Punktes
+	 * @param yy Y-Position des Punktes
+	 * @return true, wenn der Punkt innerhalb des Quadrats liegt
+	 */
 	public boolean in(double xx, double yy) {
-		if (xx >= getX() && xx <= getX() + a && yy >= getY() && yy <= getY() + a) {
+		if (xx >= x && xx <= x + a && yy >= y && yy <= y + a) {
 			return true;
 		}
 		return false;

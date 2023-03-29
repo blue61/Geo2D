@@ -71,6 +71,13 @@ public class Dreieck extends GeoObjekt {
         return super.toString() + " A: " + a + " B: " + b + " C: " + c;
     }
 
+    /**
+     * check if a point is inside the triangle
+     * Diese Methode ist ein Beispiel dafür, dass die KI sich auch irren kann. :)
+     * @param x X-Position of the point
+     * @param y Y-Position of the point
+     * @return true if the point is inside the triangle
+     */
     public boolean in (double x, double y) {
         double s = (a + b + c) / 2;
         double s1 = (a + b + Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2) - 2 * a * b * Math.cos(c))) / 2;
