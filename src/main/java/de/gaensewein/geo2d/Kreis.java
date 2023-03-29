@@ -45,8 +45,14 @@ public class Kreis extends GeoObjekt {
 		return radius * radius * Math.PI;
 	}
 
-	public boolean in(double x, double y) {
-		if (Math.sqrt((x - this.x) * (x - this.x) + (y - this.y) * (y - this.y)) <= radius) {
+	/**
+	 * Prüfe, ob ein Punkt innerhalb des Kreises liegt
+	 * @param xx X-Position des Punktes
+	 * @param yy Y-Position des Punktes
+	 * @return true, wenn der Punkt innerhalb des Kreises liegt
+	 */
+	public boolean in(double xx, double yy) {
+		if (Math.sqrt((xx - x) * (xx - x) + (yy - y) * (yy - y)) <= radius) {
 			return true;
 		}
 		return false;

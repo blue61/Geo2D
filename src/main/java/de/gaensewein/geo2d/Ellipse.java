@@ -54,6 +54,13 @@ public class Ellipse extends GeoObjekt {
         return Math.PI * a * b;
     }
 
+    /**
+     * Prüfe, ob ein Punkt in der Ellipse liegt
+     * Diese Methode scheint mir korrekt zu sein.
+     * @param xx X-Koordinate des Punktes
+     * @param yy Y-Koordinate des Punktes
+     * @return true, wenn der Punkt in der Ellipse liegt
+     */
     public boolean in(double xx, double yy) {
         if (Math.pow((xx - x) / a, 2) + Math.pow((yy - y) / b, 2) <= 1) {
             return true;
