@@ -18,8 +18,9 @@ package de.gaensewein.geo2d;
  * Diese Klasse ist die Basis für Geometrische Objekte in der euklidischen Ebene.
  * 
  * @author ktnagel
- * @remark Diese Klasse enthält die gmeinsamen Methoden der Geometrischen Objektre.
- * 	   Diese Klasse ist abstrakt, da sie nicht instanziiert werden kann.
+ * 
+ * Diese Klasse enthält die gmeinsamen Methoden der Geometrischen Objekte.
+ * Diese Klasse ist abstrakt, da sie nicht instanziiert werden kann.
  */
 public abstract class GeoObjekt {
 	protected double x;

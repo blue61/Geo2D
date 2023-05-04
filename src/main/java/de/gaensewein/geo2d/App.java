@@ -14,12 +14,14 @@
  */
 package de.gaensewein.geo2d;
 
-
+/**
+ * die Hauptklasse des Geo2D Projekts
+ */
 public class App {
 
 	/**
 	 * only a small test app for the Geo2D project 
-	 * @param args
+	 * @param args Aufrufargumente
 	 */
 	public static void main(String[] args) {
 		GeoObjekt g1 = new Kreis( 2.1d, 3.5d, 2.7d );

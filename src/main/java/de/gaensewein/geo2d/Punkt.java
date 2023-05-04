@@ -31,7 +31,7 @@ public class Punkt extends GeoObjekt {
     /**
      * berechne die Fläche
      * @return Fläche
-     * @remark ein Punkt hat keine Ausdehnung, daher ist die Fläche 0
+     * ein Punkt hat keine Ausdehnung, daher ist die Fläche 0
      */
     public double flaeche() {
         return 0;
